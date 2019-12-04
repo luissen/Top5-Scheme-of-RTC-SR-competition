@@ -5,11 +5,11 @@
 # 实验效果
 ---
 
-|Model  |FLOPS|#Params|Set5(PSNR)|
-|---    |---  |---    |---       |
-| SRCNN |52.7G|57K    | 36.66    |
-| FSRCNN|6.0G |12K    | 37.00    | 
-| Ours  |1.93G| -     | 37.12    |
+|Model  |FLOPS|#Params|Set5(PSNR)|B100(PSNR)|Urban100|
+|---    |---  |---    |---       |---       |---     |
+| SRCNN |52.7G|57K    | 36.66    | 31.36    |29.50   |
+| FSRCNN|6.0G |12K    | 37.00    | 31.53    |29.88   |
+| Ours  |1.93G| -     | 37.12    | 31.63    |30.22   |
 
 ---
 # 代码目录
@@ -64,4 +64,19 @@ cd code/src
 或者是tmp里面训好的模型（model_best.pt或者model_latest.pt，一般用best），改名成model.pth，以及code/src/model/model.py。
 
 # 数据集
-用了DIV2K和Flickr2K，需要从0001开始编号，如0001.png, 0002.png等等。
+用了DIV2K和Flickr2K的一半数据，需要从0001开始编号，如0001.png, 0002.png等等。
+数据全用的话应该效果能够再上一个台阶，但是一张卡训不过来了。
+
+# Visual Results
+### LR:
+![Image text](testing_data/bird_lr.png)
+### SR:
+![Image text](testing_data/bird_sr.png)
+### LR:
+![Image text](testing_data/woman_lr.png)
+### SR:
+![Image text](testing_data/woman_sr.png)
+### LR:
+![Image text](testing_data/hudie_lr.png)
+### SR:
+![Image text](testing_data/hudie_sr.png)
