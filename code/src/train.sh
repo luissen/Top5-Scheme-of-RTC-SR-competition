@@ -1,0 +1,1 @@
+python main.py --model model --scale 2 --patch_size 192 --lr 1e-3 --data_range 1-3600/3601-3605 --gamma 0.2 --epochs 800 --ext sep_reset
