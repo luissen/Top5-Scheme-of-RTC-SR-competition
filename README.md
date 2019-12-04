@@ -3,11 +3,13 @@
 
 本代码采用的baseline为EDSR。
 # 实验效果
-| Model  | FLOPS | #Params | Set5(PSNR)|
-|---  |---   |---|---|---|---|---|---|
-| SRCNN | 52.7G | 57K | 36.66 |
-| FSRCNN | 6.0G | 12K | 37.00 | 
-| Ours |  | 1.93G | - | 37.12 |
+---
+
+|Model  |FLOPS|#Params|Set5(PSNR)|
+|---    |---  |---    |---       |
+| SRCNN |52.7G|57K    | 36.66    |
+| FSRCNN|6.0G |12K    | 37.00    | 
+| Ours  |1.93G| -     | 37.12    |
 
 ---
 # 代码目录
