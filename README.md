@@ -2,7 +2,15 @@
 任务：对图像做2倍超分，算法复杂度控制在2G FLOPS之内。
 
 本代码采用的baseline为EDSR。
-# 目录
+# 实验效果
+| Model  | FLOPS | #Params | Set5(PSNR)|
+|---  |---   |---|---|---|---|---|---|
+| SRCNN | 52.7G | 57K | 36.66 |
+| FSRCNN | 6.0G | 12K | 37.00 | 
+| Ours |  | 1.93G | - | 37.12 |
+
+---
+# 代码目录
 - code/ 存放代码
 - submit/ 结果输出
 - testing_data/ 测试数据
